@@ -1,5 +1,5 @@
 {
-  "name": "fotos-api",
+  "name": "casas-api",
   "version": "1.0.0",
   "description": "Project to practice NodeJS, Typescript and TypeORM",
   "main": "app.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/henriquels25/fotos-api.git"
+    "url": "git+https://github.com/henriquels25/casas-api.git"
   },
   "keywords": [
     "typeorm",
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@types/express": "^4.17.13",
+    "class-validator": "^0.13.2",
     "express": "^4.17.1",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",

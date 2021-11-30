@@ -4,11 +4,7 @@
     "port": 5432,
     "username": "postgres",
     "password": "postgres",
-    "database": "fotos-db",
-    "synchronize": false,
-    "entities": ["**/entities/*.js"],
-    "migrations": ["build/migrations/*.js"],
-    "cli": {
-        "migrationsDir": "src/migrations"
-    }
+    "database": "casas-db",
+    "synchronize": true,
+    "entities": ["**/entities/*.js"]
  }
