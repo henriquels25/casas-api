@@ -1,7 +1,7 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { IsDate, IsEmail, IsNotEmpty, Max, Min, MaxLength } from 'class-validator'
 
-@Entity()
+@Entity({name: 'casas'})
 export class Casa {
 
     @PrimaryGeneratedColumn()
