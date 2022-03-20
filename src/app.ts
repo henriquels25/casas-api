@@ -50,6 +50,11 @@ app.put("/atualiza-cor", async function(req: Request, res: Response) {
     return res.status(204).send()
 });
 
+app.get("/busca-por-numero-quartos/:nrQuartos", async function(req: Request, res: Response) {
+    const casas = await casaService.buscaPorNumeroDeQuartos(Number(req.params.nrQuartos));
+    return res.send(casas);
+});
+
 // start express server
 app.listen(8080);
 console.log('Application running on port 8080')

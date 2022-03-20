@@ -26,6 +26,12 @@ export async function buscaCasaPorId(id: number){
     return await repository.findOne(id);
 }
 
+export async function buscaPorNumeroDeQuartos(nrQuartos: number){
+    const repository = getRepository(Casa);
+
+    return await repository.find({nrQuartos: nrQuartos});
+}
+
 export async function excluiCasa(id: number){
     const repository = getRepository(Casa);
     return await repository.delete(id);
