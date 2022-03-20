@@ -1,6 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 import { IsDate, IsEmail, IsNotEmpty, Max, Min, MaxLength } from 'class-validator'
-import { ExecFileSyncOptionsWithBufferEncoding } from "child_process";
 
 @Entity()
 export class Casa {
